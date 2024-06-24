@@ -284,15 +284,15 @@ body {
   }
 
   .body-content img {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 10px;
   }
   .body-container {
     display: grid;
     grid-template-columns: 200px 200px;
     align-items: center;
-    column-gap: 7px;
+    column-gap: 5px;
     justify-content: center;
   }
   .footer-container {

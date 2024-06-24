@@ -296,10 +296,10 @@ body {
     justify-content: space-evenly;
   }
   .btn-container {
-  margin-left: 20px;
+  margin-left: 0px;
 }
   .btn-container button {
-  width: 100px;
+  width: 170px;
   border-radius: 20px;
 }
   .footer-container {

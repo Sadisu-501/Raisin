@@ -295,6 +295,10 @@ body {
     column-gap: 5px;
     justify-content: center;
   }
+  .btn-container button {
+  width: 4rem;
+  border-radius: 20px;
+}
   .footer-container {
     display: block;
     align-items: center;

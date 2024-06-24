@@ -223,7 +223,7 @@ body {
     justify-content: center;
     background-color: rgb(255, 255, 0);
     padding: 30px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
   .logo h1 {
     font-size: 1.5rem;
@@ -295,8 +295,11 @@ body {
     column-gap: 5px;
     justify-content: center;
   }
+  .btn-container {
+  margin-left: 20px;
+}
   .btn-container button {
-  width: 4rem;
+  width: 50px;
   border-radius: 20px;
 }
   .footer-container {

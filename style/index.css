@@ -292,7 +292,7 @@ body {
     display: grid;
     grid-template-columns: 200px 200px;
     align-content: center;
-    column-gap: 30px;
+    column-gap: 20px;
     justify-content: center;
   }
   .footer-container {

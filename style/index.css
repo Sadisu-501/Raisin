@@ -295,11 +295,9 @@ body {
     column-gap: 0px;
     justify-content: space-evenly;
   }
-  .btn-container {
-  margin-left: 0px;
-}
+
   .btn-container button {
-  width: 4rem;
+  width: 150px;
   border-radius: 20px;
 }
   .footer-container {

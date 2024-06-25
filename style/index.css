@@ -300,7 +300,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  width: 10rem;
+  width: 150px;
   border-radius: 20px;
 }
   .footer-container {

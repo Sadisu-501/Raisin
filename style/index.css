@@ -296,7 +296,7 @@ body {
     justify-content: space-evenly;
   }
 
-  .btn-container button {
+  .btn-container {
     display: flex;
     align-items: center;
   width: 120px;

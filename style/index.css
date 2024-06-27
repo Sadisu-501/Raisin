@@ -301,7 +301,7 @@ body {
     align-items: center;
   width: 120px;
   border-radius: 25px;
-    margin-left: 25px;
+    margin-left: -25px;
 }
   .footer-container {
     display: block;

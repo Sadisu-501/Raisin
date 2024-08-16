@@ -54,18 +54,17 @@ body {
 
 .img-container {
   display: flex;
-  flex-direction: row;
-  column-gap: 50px;
+  flex-direction: column;
+  gap: 50px;
   align-items: center;
   justify-content: center;
-  padding: 50px;
-  margin-bottom: 200px;
+  padding: 20px;
 }
 
 .img-container img {
-  display: flex;
-  width: 50vh;
-  height: 50vh;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   border-radius: 0px 80px;
   border: 2px solid #007bff;
 }
@@ -75,7 +74,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .container {
@@ -135,39 +134,57 @@ textarea:focus {
 /*footer styles*/
 
 .footer-container {
-  display: flex;
-  font-size: 0.8rem;
-  align-items: center;
-  justify-content: center;
   background-color: rgb(218, 217, 217);
-  padding: 100px;
+  padding: 50px;
+  padding-bottom: 0px;
 }
 .socials {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 50px;
-  font-weight: bold;
+  gap: 50px;
 }
 .socials img {
-  width: 30px;
   margin-left: 20px;
-  margin-bottom: 10px;
-}
-.last-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  max-width: 30px;
+  height: auto;
 }
 
-/*responsive layout for mobile devices*/
+.last {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+/*responsive layout for small laptop screen*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   .nav-container {
-    padding: 20px;
+    padding: 80px;
   }
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-left: 30px;
+  }
+  .nav-content {
+    margin-right: 40px;
+    font-size: 0.8rem;
+  }
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+  }
+}
+
+/*responsive layout for tablet devices*/
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    padding: 50px;
+  }
+  .logo {
+    font-size: 1.2rem;
   }
   .nav-content {
     display: none;
@@ -175,12 +192,58 @@ textarea:focus {
 
   .menuBtn {
     display: block;
-    font-size: 1rem;
+    font-size: 2.5rem;
     cursor: pointer;
-    margin-top: 10px;
-    margin-left: 20px;
-    align-items: center;
-    justify-content: center;
+    margin: 10px 20px 0 0;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: absolute;
+    top: 11rem;
+    left: 0;
+    background-color: burlywood;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .menu.close {
+    display: none;
+  }
+  .menu a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.1rem;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .last {
+    font-weight: bold;
+  }
+}
+
+/* responsive design for mobile devices and below */
+@media screen and (max-width: 480px) {
+  .nav-container {
+    padding: 20px;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .nav-content {
+    display: none;
+  }
+
+  .menuBtn {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding-right: 50px;
   }
   .menu {
     display: flex;
@@ -203,122 +266,31 @@ textarea:focus {
   }
 
   .img-container {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
+    gap: 20px;
   }
   .img-container img {
-    width: 300px;
-    height: 300px;
-    border-radius: 0px 80px;
-    border: 1px solid #007bff;
+    max-width: 300px;
   }
   .container {
     max-width: 350px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
-  .button-container {
-    margin: 150px 0px 50px 0px;
-    font-size: 1rem;
-  }
+
   .footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(230, 230, 230);
+    flex-direction: column;
   }
-  .footer-logo {
-    margin-top: 5px;
-  }
+
   .socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     line-height: 4rem;
-    row-gap: 60px;
-
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
     font-size: 1rem;
   }
-  .socials img {
-    width: 30px;
-    margin-left: 30px;
-  }
-  .info img {
-    margin-left: 68px;
-  }
-}
 
-/*responsive layout for tablet devices*/
-
-@media screen and (max-width: 768px) {
-  .nav-container {
-    padding: 80px;
-  }
-  .logo {
-    font-size: 2rem;
-  }
-  .nav-content {
-    display: none;
-  }
-
-  .menuBtn {
-    display: block;
-    font-size: 3rem;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-left: 20px;
-    align-items: center;
-    justify-content: center;
-  }
-  .menu {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    position: absolute;
-    top: 11rem;
-    left: 0;
-    background-color: burlywood;
-    width: 100%;
-    padding: 1rem;
-  }
-  .menu.close {
-    display: none;
-  }
-  .menu a {
-    text-decoration: none;
-    color: black;
-    letter-spacing: 0.1rem;
-  }
-
-  .img-container {
-    display: flex;
-    flex-direction: column;
-    row-gap: 90px;
-  }
-}
-
-/*responsive layout for small laptop screen*/
-
-@media screen and (max-width: 1024px) {
-  .nav-container {
-    padding: 80px;
-  }
-  .logo {
-    font-size: 1.3rem;
-    margin-left: 30px;
-  }
-  .nav-content {
-    margin-right: 40px;
+  .last {
+    font-weight: bold;
     font-size: 0.8rem;
-  }
-  .img-container {
-    display: flex;
-    flex-direction: column;
-    row-gap: 100px;
+    padding: 5px;
   }
 }
